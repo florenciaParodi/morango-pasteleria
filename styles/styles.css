@@ -103,7 +103,7 @@ nav ul li {
     color: #79064d;
 }
 
-main h2 {
+.img-section h2 {
     font-size: 2em;
     font-weight: 500;
     color: #bb2581;
@@ -166,10 +166,15 @@ main h2 {
     height: auto;
 }
 
-main section img {
+.img-section img {
     width: 150px;
     height: 150px;
 }
+
+.sobreMi-section {
+    margin: 200px;
+}
+
 
 .solicitud {
     position: fixed;
@@ -188,10 +193,7 @@ main section img {
     border-radius: 20px;
     padding: 5px;
     background-color: #ffffff;
-}
-
-.aboutCocinera {
-    margin: 200px;
+    border: 5px double #bb2581;
 }
 
 footer {
