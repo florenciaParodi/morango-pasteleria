@@ -171,11 +171,6 @@ nav ul li {
     height: 150px;
 }
 
-.sobreMi-section {
-    margin: 200px;
-}
-
-
 .solicitud {
     position: fixed;
     right: 50px;
@@ -184,7 +179,7 @@ nav ul li {
 
 .solicitud a {
     text-decoration: none;
-    color: #bb2581;
+    color: #ffffff;
     font-size: 1.5em;
     font-weight: 600;
 }
@@ -192,8 +187,110 @@ nav ul li {
 .solicitud button {
     border-radius: 20px;
     padding: 5px;
-    background-color: #ffffff;
-    border: 5px double #bb2581;
+    background-color: #bb2581;
+    border: 5px dotted #ffffff;
+}
+
+.sobreMi-section {
+    margin: 150px 100px;
+}
+
+.aboutCocinera, .aboutMorango{
+    margin: 50px;
+}
+
+.cocineraInfo, .morangoInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cocineraInfo img, .morangoInfo img{
+    width: 200px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.productos-market{
+    margin: 150px;
+}
+
+.productos-titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.productos-cards{
+    margin: 50px 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px dotted #79064d;
+}
+
+.producto-container{
+    border: 1px solid #79064d;
+    border-radius: 20px;
+    width: 150px;
+    height: auto;
+    overflow: hidden;
+}
+
+.producto-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.info-producto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.info-producto a{
+    align-self: flex-end;
+    text-decoration: none;
+    font-size: 30px;
+    border: 1px solid #79064d;
+    border-radius: 100px;
+    margin: 10px;
+}
+
+
+.testimonios{
+    margin: 150px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.testimonios img{
+    width: 100px;
+    height: auto;
+    border-radius: 20px;
+    border: 1px solid #79064d;
+}
+
+.cardTestimonio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px dotted #79064d;
+    border-radius: 20px;
+}
+
+.faqs {
+    margin: 150px;
+}
+
+.forms{
+    margin: 150px;
 }
 
 footer {
