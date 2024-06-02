@@ -23,46 +23,52 @@
                 <li class="header__item__menu"><a class="header__link__menu" href="index.html">Inicio</a></li>
                 <li class="header__item__menu"><a class="header__link__menu" href="sobreMi.html">Sobre mi</a></li>
                 <li class="header__item__menu"><a class="header__link__menu" href="productos.html">Productos</a></li>
-                <li class="header__item__menu"><a class="header__link__menu" href="testimonios.html">Testimonios</a></li>
+                <li class="header__item__menu"><a class="header__link__menu" href="testimonios.html">Testimonios</a>
+                </li>
                 <li class="header__item__menu"><a class="header__link__menu" href="faqS.html">FAQ's</a></li>
                 <li class="header__item__menu"><a class="header__link__menu" href="form.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="forms">
-        <div>
-            <h1>Solicitá presupuesto y contactanos para tu evento !</h1>
-            <p>Te responderemos a la brevedad</p>
+    <section class="bloque__contacto gral--margin">
 
-            <form action="">
-                <h3>Contactarme por correo</h3>
-                <div>
-                    <label for="name">Nombre</label>
-                    <input type="text" id="name">
+        <div class="contacto__welcome">
+            <h1 class="contacto__titulo">Solicitá presupuesto y contactanos para tu evento !</h1>
+            <p class="contacto__parrafo">Te responderemos a la brevedad.</p>
+        </div>
+        <div class="section__contacto">
+            <form class="contacto__forms forms--color" action="">
+                <h3 class="forms__subtitulo">Contactame por correo</h3>
+                <div class="forms__datos">
+                    <div class="datos__personales">
+                        <label for="name">Nombre</label>
+                        <input class="dato--area" type="text" id="name">
+                        <label for="email">Correo electrónico</label>
+                        <input class="dato--area" type="email" id="email">
+                    </div>
+                    <div class="datos__pedido">
+                        <textarea class="dato--area" name="" id="" cols="50" rows="6"></textarea>
+                    </div>
                 </div>
-                <div>
-                    <label for="email">Correo electrónico</label>
-                    <input type="email" id="email">
-                </div>
-                <div>
-                    <textarea name="" id="" cols="18" rows="5"></textarea>
-                </div>
-                <div>
-                    <label for="adjunto">Adjunta un ejemplo..</label>
-                    <input type="file" id="adjunto">
-                </div>
-                <div>
-                    <label for="send"></label>
-                    <input type="submit">
+                <div class="forms__buttons">
+                    <div class="buttons__adjuntar">
+                        <label for="adjunto">Adjunta un ejemplo..</label>
+                        <input class="adjunto__button" type="file" id="adjunto">
+                    </div>
+                    <div class="forms__enviar">
+                        <label for="send"></label>
+                        <input class="enviar__button" type="submit">
+                    </div>
                 </div>
             </form>
+
+            <div class="contacto__whatsapp forms--color">
+                <h3 class="forms__subtitulo">Contactame por whatsapp</h3>
+                <a class="whatsapp__link" href="">wsp</a>
+            </div>
         </div>
 
-        <div class="wspButtonOption">
-            <h3>Contactarme por whatsapp</h3>
-            <a href="">icon de whatsapp</a>
-        </div>
 
     </section>
 

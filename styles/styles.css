@@ -133,7 +133,7 @@ html {
     height: auto;
 }
 
-.demo__img {
+.img__section {
     margin: 50px;
     display: grid;
     grid-template-columns: repeat(4, 150px);
@@ -167,19 +167,38 @@ html {
 .historia--grid{
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(2, 300px);
+    grid-template-rows: 300px;
+    row-gap: 100px;
+}
+
+.historia__container{
+    padding: 20px;
+    border: 1px solid rgb(68, 47, 47);
+    border-radius: 20px;
+    background-color: #79064d;
+    box-shadow: 5px 5px #c669a2;
+}
+
+.historia__container:hover{
+    background-color: #c669a2;
+    border: 1px solid #79064d;
+}
+
+.historia--order{
+    order: 2;
 }
 
 .historia__titulo {
     font-size: 2em;
     text-align: center;
     padding: 10px;
-    color: #bb2581;
+    color: #ffffff;
 }
 
 .historia__parrafo{
     font-size: 1em;
     text-align: center;
+    color: #ffffff;
 }
 
 .historia--em{
@@ -197,6 +216,11 @@ html {
     width: 200px;
     height: auto;
     border-radius: 50px;
+    box-shadow: 4px 4px #c669a2;
+}
+
+.historia__img:hover{
+    box-shadow: 4px 4px #79064d;
 }
 
 .market__welcome{
@@ -208,7 +232,7 @@ html {
 }
 
 .market__titulo {
-    font-size: 4em;
+    font-size: 5em;
     font-weight: 600;
     color: #bb2581;
 }
@@ -220,10 +244,17 @@ html {
 }
 
 .market__filtros{
-    padding-top: 50px;
+    margin: 10px 0;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: #79064d;
+    border-radius: 20px;
+}
+
+.filtro__text{
+    color: #ffffff;
 }
 
 .search {
@@ -232,6 +263,7 @@ html {
     border-radius: 20px;
     width: 300px;
 }
+
 
 .select__option{
     padding: 5px;
@@ -249,21 +281,20 @@ html {
 }
 
 .market__productos__cards {
-    margin: 50px 10px 50px 10px ;
-    padding: 10px;
-    height: auto;
-}
-
-.grid__indiv__producto{
-    display: grid;
-    grid-template-columns: 200px;
-    grid-template-rows: auto;
+    border: 1px solid #79064d;
+    border-radius: 20px;
+/*     margin: 50px 10px 50px 10px ;
+ */    padding: 10px;
+    overflow: scroll;
+    height: 1200px;
+    width: auto;
 }
 
 .grid__productos{
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: 100%;
+    row-gap: 20px;
 }
 
 .producto__container {
@@ -271,6 +302,12 @@ html {
     border-radius: 20px;
     width: 200px;
     height: auto;
+}
+
+.grid__indiv__producto{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 200px;
 }
 
 .producto__img {
@@ -287,9 +324,10 @@ html {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin: 20px;
     padding: 5px;
 }
-.producto__titulo{
+.producto__name{
     font-size: 1em;
     align-self: center;
     text-decoration: underline;
@@ -304,7 +342,10 @@ html {
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 5px;
+    padding: 2px;
+    margin: 5px;
+    margin-top: 0;
+
 }
 
 .producto__button__link {
@@ -317,37 +358,161 @@ html {
 }
 
 
-
-.testimonios {
-    margin: 150px;
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
+.testimonios__section{
+    padding: 20px;
+    border: 2px solid #79064d;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(1, 100%);
+    column-gap: 10px;
 }
 
-.testimonios img {
-    width: 100px;
-    height: auto;
-    border-radius: 20px;
+.testimonio__card{
+    padding: 10px;
     border: 1px solid #79064d;
-}
-
-.cardTestimonio {
+    border-radius: 20px;
+    background-color: #c669a2;
+    color: #ffffff;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    border: 2px dotted #79064d;
+    gap: 20px;
+}
+
+.testimonio__img{
+    width: 100px;
+    height: auto;
     border-radius: 20px;
 }
 
-.faqs {
-    margin: 150px;
+
+.bloque__faqs{
+    border: 1px solid #79064d;
+    border-radius: 20px;
 }
 
-.forms {
-    margin: 150px;
+.faqs__titulo{
+    margin: 20px;
+    font-size: 2em;
+    text-align: center;
+    color: #bb2581;
+
 }
+
+.bloque__preguntas{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faqs__preguntas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.preguntas__card{
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #79064d;
+    border-radius: 20px;
+}
+
+.preguntas__titulo{
+    font-size: 1em;
+    color: #79064d;
+}
+
+.bloque__contacto{
+    border: 1px solid #79064d;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.contacto__welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.contacto__titulo{
+    font-size: 2em;
+    color: #bb2581;
+}
+
+.section__contacto{
+    margin: 50px;
+    padding: 20px;
+    border: 2px solid #c669a2;
+    border-radius: 20px;
+    background-color: #79064d;
+}
+
+.forms--color{
+    color: #ffffff;
+}
+
+.forms__datos{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.datos__personales{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    width: 300px;
+}
+
+.dato--area{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.forms__buttons{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.enviar__button{
+    padding: 7px;
+    border: none;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #79064d;
+}
+
+.contacto__whatsapp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.whatsapp__link{
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    color: #ffffff;
+    background-color: rgb(45, 255, 45);
+    border-radius: 50px;
+}
+
 
 .bloque__footer {
     margin: 25px;
