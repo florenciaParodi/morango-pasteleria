@@ -13,89 +13,152 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
+    <header class="bloque__header">
+        <div class="header__logo">
             <img src="imgs/logo.png" alt="LOGO">
         </div>
 
-        <nav class="menu-container">
-            <ul class="menu-list">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobreMi.html">Sobre mi</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="testimonios.html">Testimonios</a></li>
-                <li><a href="faqS.html">FAQ's</a></li>
-                <li><a href="form.html">Contacto</a></li>
+        <nav class="header__nav__menu">
+            <ul class="header__lista__menu">
+                <li class="header__item__menu"><a class="header__link__menu" href="index.html">Inicio</a></li>
+                <li class="header__item__menu"><a class="header__link__menu" href="sobreMi.html">Sobre mi</a></li>
+                <li class="header__item__menu"><a class="header__link__menu" href="productos.html">Productos</a></li>
+                <li class="header__item__menu"><a class="header__link__menu" href="testimonios.html">Testimonios</a>
+                </li>
+                <li class="header__item__menu"><a class="header__link__menu" href="faqS.html">FAQ's</a></li>
+                <li class="header__item__menu"><a class="header__link__menu" href="form.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="productos-market">
+    <section class="bloque__market gral--margin bloque__bottom--margin">
 
-        <section class="welcome-productos">
-            <div class="productos-titulo">
-                <h2>Nuestros productos</h2>
-                <p>Combinalos como quieras!</p>
+        <div class="market__welcome">
+            <h2 class="market__titulo">Nuestros productos</h2>
+            <p class="market__parrafo">Combinalos como quieras!</p>
+        </div>
+
+        <div class="market__filtros">
+            <div class="search__bar">
+                <label for="buscar"></label>
+                <input type="search" placeholder="Buscar..." class="search">
             </div>
+            <div class="dropdown__filter">
+                <label for="filtro">Filtrar por</label>
+                <select name="selectoption" id="options" class="select__option">
+                    <optgroup label="Tortas temáticas" class="option--titulo">Tortas temáticas
+                        <option class="option__name" value="barbie" >Barbie</option>
+                        <option class="option__name" value="spiderman">Spider Man</option>
+                        <option class="option__name" value="sirenita">La sirenita</option>
+                        <option class="option__name" value="heroes">Héroes</option>
+                        <option class="option__name" value="pepapig">Pepa Pig</option>
+                        <option class="option__name" value="bluey">Bluey</option>
+                        <option class="option__name" value="zenon">La granja de Zenón</option>
+                        <option class="option__name" value="futbol">Fútbol</option>
+                        <option class="option__name" value="alltematicas">Todas</option>
+                        <option class="option__name" value="personalizadotematicas">Personaliza tu torta!</option>
+                    </optgroup>
+                    <optgroup label="Tendencias" class="option--titulo">
+                        <option class="option__name" value="zodiaco">Signos del zodíaco</option>
+                        <option class="option__name" value="ayno">Ay no!</option>
+                        <option class="option__name" value="hppybday">Happy Birthday</option>
+                        <option class="option__name" value="seasons">Seasons</option>
+                        <option class="option__name" value="alltendencias">Todas</option>
+                        <option class="option__name" value="personalizadotendencias">Personaliza tu torta !</option>
+                    </optgroup>
+                    <optgroup label="Number cake" class="option--titulo">
+                        <option class="option__name" value="veinticuatro">24</option>
+                        <option class="option__name" value="ochenta">80</option>
+                        <option class="option__name" value="nueve">9</option>
+                        <option class="option__name" value="cinco">5</option>
+                        <option class="option__name" value="uno">1</option>
+                        <option class="option__name" value="allnl">Todas</option>
+                        <option class="option__name" value="personalizadonl">Personaliza tu number o letter cake !</option>
+                    </optgroup>
+                    <optgroup label="Mini Pastelería" class="option--titulo">
+                        <option class="option__name" value="bambi">Bambi</option>
+                        <option class="option__name" value="encanto">Encanto</option>
+                        <option class="option__name" value="sirenita">La sirenita</option>
+                        <option class="option__name" value="stitch">Stitch</option>
+                        <option class="option__name" value="allminis">Todo</option>
+                        <option class="option__name" value="personalizadomini">Personaliza tu mini pastelería !</option>
+                    </optgroup>
+                    <optgroup label="Tortas y tartas clásicas" class="option--titulo">
+                        <option class="option__name" value="brownie">Brownie</option>
+                        <option class="option__name" value="chocotorta">Chocotorta</option>
+                        <option class="option__name" value="lemonpie">Lemon Pie</option>
+                        <option class="option__name" value="frutillas">Frutillas</option>
+                        <option class="option__name" value="havannett">Havannett</option>
+                        <option class="option__name" value="allclasicas">Todas</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+
+        <section class="market__productos__cards grid__productos">
+
+            <article class="producto__container grid__indiv__producto">
+                <img class="producto__img" src="imgs/24.png" alt="torta de número 24">
+                <div class="producto__info">
+                    <a class="producto__titulo" href="">nombre producto</a>
+                    <p class="producto__descripción">Lorem ipsum dolor, sit amet consectetur</p>
+                </div>
+                <div class="producto__priceAndButton">
+                    <p class="producto__price">$00.000-</p>
+                    <a class="producto__button__link" href="">+</a>
+                </div>
+            </article>
+            <article class="producto__container grid__producto">
+                <img class="producto__img" src="imgs/24.png" alt="torta de número 24">
+                <div class="producto__info">
+                    <a class="producto__titulo" href="">nombre producto</a>
+                    <p class="producto__descripción">Lorem ipsum dolor, sit amet consectetur</p>
+                </div>
+                <div class="producto__priceAndButton">
+                    <p class="producto__price">$00.000-</p>
+                    <a class="producto__button__link" href="">+</a>
+                </div>
+            </article>
+            <article class="producto__container grid__producto">
+                <img class="producto__img" src="imgs/24.png" alt="torta de número 24">
+                <div class="producto__info">
+                    <a class="producto__titulo" href="">nombre producto</a>
+                    <p class="producto__descripción">Lorem ipsum dolor, sit amet consectetur</p>
+                </div>
+                <div class="producto__priceAndButton">
+                    <p class="producto__price">$00.000-</p>
+                    <a class="producto__button__link" href="">+</a>
+                </div>
+            </article>
+            <article class="producto__container grid__producto">
+                <img class="producto__img" src="imgs/24.png" alt="torta de número 24">
+                <div class="producto__info">
+                    <a class="producto__titulo" href="">nombre producto</a>
+                    <p class="producto__descripción">Lorem ipsum dolor, sit amet consectetur</p>
+                </div>
+                <div class="producto__priceAndButton">
+                    <p class="producto__price">$00.000-</p>
+                    <a class="producto__button__link" href="">+</a>
+                </div>
+            </article>
+
         </section>
+    </section>
 
-        <section class="productos-cards">
-
-            <article class="producto-container">
-                <img src="imgs/24.png" alt="torta de número 24">
-                <div class="info-producto">
-                    <h3>nombre producto</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur</p>
-                    <a href="">+</a>
-                </div>
-            </article>
-            <article class="producto-container">
-                <img src="imgs/24.png" alt="torta de número 24">
-                <div class="info-producto">
-                    <h3>nombre producto</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur</p>
-                    <a href="">+</a>
-                </div>
-            </article>
-            <article class="producto-container">
-                <img src="imgs/24.png" alt="torta de número 24">
-                <div class="info-producto">
-                    <h3>nombre producto</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur</p>
-                    <a href="">+</a>
-                </div>
-            </article>
-            <article class="producto-container">
-                <img src="imgs/24.png" alt="torta de número 24">
-                <div class="info-producto">
-                    <h3>nombre producto</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur</p>
-                    <a href="">+</a>
-                </div>
-            </article><article class="producto-container">
-                <img src="imgs/24.png" alt="torta de número 24">
-                <div class="info-producto">
-                    <h3>nombre producto</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur</p>
-                    <a href="">+</a>
-                </div>
-            </article>
-        </section>
-
-        <footer>
-            <div>
-                <h4>Redes sociales</h4>
-                <ul class="redes-icons"><!--serán todos icons-->
-                    <li><a href="">Gmail</a></li>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Whatsapp</a></li>
-                    <li><a href="">Facebook</a></li>
-                </ul>
-            </div>
-            <div class="copyright">
-                Todos los derechos reservados @FLIZ
-            </div>
-        </footer>
+    <footer class="bloque__footer">
+        <div class="footer__elements">
+            <h4 class="footer__titulo">Redes sociales</h4>
+            <ul class="footer__list__redes"><!--serán todos icons-->
+                <li class="footer__redes__item"><a class="footer__redes__link" href="">Gmail</a></li>
+                <li class="footer__redes__item"><a class="footer__redes__link" href="">Instagram</a></li>
+                <li class="footer__redes__item"><a class="footer__redes__link" href="">Whatsapp</a></li>
+                <li class="footer__redes__item"><a class="footer__redes__link" href="">Facebook</a></li>
+            </ul>
+        </div>
+        <div class="footer__copyright">
+            Todos los derechos reservados @FLIZ
+        </div>
+    </footer>
 </body>
 
 </html>

@@ -21,7 +21,15 @@ html {
     font-family: "Montserrat", sans-serif;
 }
 
-header {
+.gral--margin {
+    margin: 150px;
+}
+
+.bloque__bottom--margin{
+    margin-bottom: 75px;
+}
+
+.bloque__header {
     /*margin: 5px;*/
     width: 100%;
     display: flex;
@@ -32,20 +40,20 @@ header {
     z-index: 1;
 }
 
-.logo img {
+.header__logo img {
     width: 80px;
     height: auto;
 }
 
-.menu-list {
+.header__lista__menu {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     background-color: #bb2581;
     border-radius: 20px;
 }
 
-.menu-list a {
+.header__link__menu {
     padding: 10px;
     text-decoration: none;
     color: #ffffff;
@@ -54,21 +62,22 @@ header {
     text-align: center;
 }
 
-nav ul li {
+.header__item__menu {
     font-size: 1em;
     list-style-type: none;
 }
 
-.video-welcome video {
-    width: 100vw;
-    height: 100vh;
+
+.bloque__main img {
+    width: 150px;
+    height: 150px;
 }
 
-.welcome {
+.bloque__welcome {
     position: relative;
 }
 
-.welcome-text {
+.welcome__text {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -81,14 +90,14 @@ nav ul li {
     background-color: rgba(255, 255, 255, 0.547);
 }
 
-.welcome h1 {
+.welcome__titulo {
     font-size: 6em;
     font-weight: 900;
     text-align: center;
     color: #bb2581;
 }
 
-.welcome h3 {
+.welcome__subtitulo {
     font-size: 1em;
     font-weight: 300;
     text-align: center;
@@ -96,24 +105,35 @@ nav ul li {
     font-style: italic;
 }
 
-.welcome p {
+.welcome__parrafo {
     padding: 10px;
     font-size: 2em;
     text-align: center;
     color: #79064d;
 }
 
-.img-section h2 {
+.welcome__video video {
+    width: 100vw;
+    height: 100vh;
+}
+
+.bloque__demo {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+
+.demo__titulo {
     font-size: 2em;
     font-weight: 500;
     color: #bb2581;
-    text-align: center;
+    align-self: center;
     margin: 20px;
+    width: 200px;
+    height: auto;
 }
 
-.tortas-tematicas-img,
-.number-letter-cakes-img,
-.tartas-clasicas-img {
+.demo__img {
     margin: 50px;
     display: grid;
     grid-template-columns: repeat(4, 150px);
@@ -124,159 +144,195 @@ nav ul li {
     column-gap: 5px;
 }
 
-.tendencias-img,
-.mini-pasteleria-img {
-    margin: 50px;
-    display: grid;
-    grid-template-columns: repeat(4, 150px);
-    grid-template-rows: repeat(2, 150px);
-    justify-content: start;
-    align-items: start;
-    row-gap: 5px;
-    column-gap: 5px;
-}
-
-.tortasTematicas,
-.numberLetterCakes,
-.tartasClasicas {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 50px;
-}
-
-.tortasTematicas h2,
-.numberLetterCakes h2,
-.tartasClasicas h2 {
-    align-self: center;
-    width: 200px;
-    height: auto;
-}
-
-.tendencias,
-.miniPasteleria {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 50px;
-}
-
-.tendencias h2,
-.miniPasteleria h2 {
-    align-self: center;
-    width: 200px;
-    height: auto;
-}
-
-.img-section img {
-    width: 150px;
-    height: 150px;
-}
-
-.solicitud {
+.bloque__solicitud {
     position: fixed;
     right: 50px;
     bottom: 50px;
 }
 
-.solicitud a {
+.solicitud__link {
     text-decoration: none;
     color: #ffffff;
     font-size: 1.5em;
     font-weight: 600;
 }
 
-.solicitud button {
+.solicitud__button {
     border-radius: 20px;
     padding: 5px;
     background-color: #bb2581;
     border: 5px dotted #ffffff;
 }
 
-.sobreMi-section {
-    margin: 150px 100px;
+.historia--grid{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 300px);
 }
 
-.aboutCocinera, .aboutMorango{
-    margin: 50px;
+.historia__titulo {
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+    color: #bb2581;
 }
 
-.cocineraInfo, .morangoInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.historia__parrafo{
+    font-size: 1em;
+    text-align: center;
 }
 
-.cocineraInfo img, .morangoInfo img{
+.historia--em{
+    font-style: italic;
+    font-weight: 500;
+    color: #ff46b8;
+}
+
+.historia__multimedia{
+    justify-self: center;
+    align-self: center;
+}
+
+.historia__img {
     width: 200px;
     height: auto;
     border-radius: 50px;
 }
 
-.productos-market{
-    margin: 150px;
-}
-
-.productos-titulo{
+.market__welcome{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-}
-
-.productos-cards{
-    margin: 50px 10px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 5px dotted #79064d;
-}
-
-.producto-container{
-    border: 1px solid #79064d;
-    border-radius: 20px;
-    width: 150px;
-    height: auto;
-    overflow: hidden;
-}
-
-.producto-container img{
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-.info-producto{
-    display: flex;
-    flex-direction: column;
     gap: 10px;
 }
 
-.info-producto a{
-    align-self: flex-end;
+.market__titulo {
+    font-size: 4em;
+    font-weight: 600;
+    color: #bb2581;
+}
+
+.market__parrafo{
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.market__filtros{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search {
+    padding: 5px;
+    border: 2px dotted #79064d;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.select__option{
+    padding: 5px;
+    border: 2px solid #79064d;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.option--titulo{
+    color: #bb2581;
+}
+
+.option__name{
+    color: black;
+}
+
+.market__productos__cards {
+    margin: 50px 10px 50px 10px ;
+    padding: 10px;
+    height: auto;
+}
+
+.grid__indiv__producto{
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: auto;
+}
+
+.grid__productos{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 100%;
+}
+
+.producto__container {
+    border: 1px solid #79064d;
+    border-radius: 20px;
+    width: 200px;
+    height: auto;
+}
+
+.producto__img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.producto__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+.producto__titulo{
+    font-size: 1em;
+    align-self: center;
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+.producto__priceAndButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+.producto__button__link {
     text-decoration: none;
     font-size: 30px;
-    border: 1px solid #79064d;
-    border-radius: 100px;
-    margin: 10px;
+    background-color: #bb2581;
+    color: white;
+    border-radius: 50px;
+    padding: 2px;
 }
 
 
-.testimonios{
+
+.testimonios {
     margin: 150px;
     display: flex;
     flex-direction: row;
     gap: 50px;
 }
 
-.testimonios img{
+.testimonios img {
     width: 100px;
     height: auto;
     border-radius: 20px;
     border: 1px solid #79064d;
 }
 
-.cardTestimonio{
+.cardTestimonio {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -289,41 +345,35 @@ nav ul li {
     margin: 150px;
 }
 
-.forms{
+.forms {
     margin: 150px;
 }
 
-footer {
+.bloque__footer {
     margin: 25px;
 }
 
-.redes-icons {
+.footer__list__redes {
     margin: 50px;
-}
-
-footer ul {
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    text-align: center;
 }
 
-footer h4 {
+.footer__titulo {
     text-align: center;
     color: #bb2581;
 }
 
-footer a {
+.footer__redes__link {
     color: #bb2581;
     text-decoration: none;
 }
 
-footer li {
+.footer__redes__item {
     list-style-type: none;
 }
 
-footer ul {
-    text-align: center;
-}
-
-.copyright {
+.footer__copyright {
     text-align: center;
 }
