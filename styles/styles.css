@@ -67,10 +67,8 @@ html {
     list-style-type: none;
 }
 
-
-.bloque__main img {
-    width: 150px;
-    height: 150px;
+.bloqe__main{
+    width: 100vw;
 }
 
 .bloque__welcome {
@@ -88,7 +86,7 @@ html {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.547);
+    background-color: rgba(0, 0, 0, 0.068);
 }
 
 .welcome__titulo {
@@ -144,6 +142,8 @@ html {
 }
 
 .demo__img{
+    width: 150px;
+    height: 150px;
     border-radius: 5px;
     box-shadow: 2px 1px #79064d;
 }
@@ -156,16 +156,17 @@ html {
 
 .solicitud__link {
     text-decoration: none;
-    color: #ffffff;
+    color: #79064d;
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .solicitud__button {
     border-radius: 20px;
     padding: 5px;
-    background-color: #bb2581;
-    border: 5px dotted #ffffff;
+    background-color: #ffffff;
+    border: 2px solid #c669a2;
+    box-shadow: 5px 3px #c669a2;
 }
 
 .historia--grid{
@@ -525,8 +526,9 @@ html {
 .footer__list__redes {
     margin: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     text-align: center;
+    gap: 100px;
 }
 
 .footer__titulo {
