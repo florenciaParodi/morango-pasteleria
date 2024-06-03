@@ -191,7 +191,7 @@ html {
 
 .historia__container:hover{
     background-color: #c669a2;
-    border: 1px solid #79064d;
+    border: 1px solid #ffffff;
 }
 
 .historia--order{
@@ -551,6 +551,79 @@ html {
     list-style-type: none;
 }
 
-.footer__copyright {
+.footer__copyright{
     text-align: center;
+    color: rgb(41, 146, 41);
+    font-weight: bold;
+    font-family: monospace;
+}
+
+.copyright__link{
+    font-size: 1em;
+    color: rgb(25, 255, 25);
+}
+
+
+@media only screen and (max-width: 576px){
+    .bloque__historia{
+        margin: 50px 150px;
+    }
+
+    .historia__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer__list__redes{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-decoration: underline #c669a2;
+    }
+
+    .footer__redes__link{
+        color: #79064d;
+    }
+
+    .header__lista__menu{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+        grid-template-rows: repeat(2,20px);
+        padding: 10px;
+        background-color: #ffffff;
+    }
+
+    .header__item__menu{
+        border: 1px solid #79064d;
+        border-radius: 20px;
+    }
+
+    .header__link__menu{
+        color: #79064d;
+    }
+
+    .bloque__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .bloque__faqs{
+        margin: 50px 150px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .historia__container{
+        grid-template-rows: 400px;
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+}
+@media only screen and (min-width: 1201px) and (max-width: 1400px) {
 }
