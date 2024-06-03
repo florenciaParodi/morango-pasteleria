@@ -86,7 +86,7 @@ html {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.068);
+    background-color: rgba(0, 0, 0, 0.156);
 }
 
 .welcome__titulo {
@@ -94,35 +94,40 @@ html {
     font-weight: 900;
     text-align: center;
     color: #bb2581;
+    text-shadow: 2px 3px #ffffff;
 }
 
 .welcome__subtitulo {
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 500;
     text-align: center;
-    color: #c669a2;
+    color: #ffffff;
     font-style: italic;
 }
 
 .welcome__parrafo {
     padding: 10px;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
-    color: #79064d;
+    color: #ffffff;
 }
 
 
 .welcome__video{
-    width: 100%;
+    width: 100vw;
 }
 
-.bloque__demo {
+.bloque__demo{
+    margin: 20px 150px;
+}
+
+.demo__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
-.demo__titulo {
+.container__titulo{
     font-size: 2em;
     font-weight: 500;
     color: #bb2581;
@@ -136,14 +141,14 @@ html {
     margin: 50px;
     display: grid;
     grid-template-columns: repeat(4, 150px);
-    grid-template-rows: repeat(2, 150px);
+    grid-template-rows: repeat(2, 200px);
     row-gap: 5px;
     column-gap: 5px;
 }
 
 .demo__img{
     width: 150px;
-    height: 150px;
+    height: 200px;
     border-radius: 5px;
     box-shadow: 2px 1px #79064d;
 }
@@ -156,7 +161,7 @@ html {
 
 .solicitud__link {
     text-decoration: none;
-    color: #79064d;
+    color: #ffffff;
     font-size: 1.5em;
     font-weight: 500;
 }
@@ -164,9 +169,9 @@ html {
 .solicitud__button {
     border-radius: 20px;
     padding: 5px;
-    background-color: #ffffff;
-    border: 2px solid #c669a2;
-    box-shadow: 5px 3px #c669a2;
+    background-color: #bb2581;
+    border: 2px solid #ffffff;
+    box-shadow: 5px 3px #ffffff;
 }
 
 .historia--grid{
@@ -365,7 +370,8 @@ html {
 
 .testimonios__section{
     padding: 20px;
-    border: 2px solid #79064d;
+    border: 1px solid #79064d;
+    border-radius: 20px;
     display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(1, 100%);
