@@ -74,6 +74,7 @@ html {
 }
 
 .bloque__welcome {
+    width: 100vw;
     position: relative;
 }
 
@@ -112,15 +113,15 @@ html {
     color: #79064d;
 }
 
-.welcome__video video {
-    width: 100vw;
-    height: 100vh;
+
+.welcome__video{
+    width: 100%;
 }
 
 .bloque__demo {
     display: flex;
-    justify-content: space-evenly;
-    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .demo__titulo {
@@ -138,10 +139,13 @@ html {
     display: grid;
     grid-template-columns: repeat(4, 150px);
     grid-template-rows: repeat(2, 150px);
-    justify-content: end;
-    align-items: end;
     row-gap: 5px;
     column-gap: 5px;
+}
+
+.demo__img{
+    border-radius: 5px;
+    box-shadow: 2px 1px #79064d;
 }
 
 .bloque__solicitud {
