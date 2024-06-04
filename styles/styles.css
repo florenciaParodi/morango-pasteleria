@@ -113,8 +113,7 @@ html {
 }
 
 .bloque__demo{
-    margin-top: 50px;
-    max-width: 100vw;
+    margin-top: 30px;
 }
 
 .demo__container {
@@ -122,34 +121,34 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #79064d;
+    text-align: center;
+    background-color: #c669a2;
+    border-radius: 20px;
     margin: 20px;
-    max-width: 100%;
 }
 
 .container__titulo{
     font-size: 2em;
     font-weight: bold;
     color: #ffffff;
-    align-self: center;
     margin: 20px;
-    width: 200px;
-    height: auto;
+    margin: 50px 10px 20px;
 }
 
 .img__section {
     display: grid;
-    grid-template-columns: repeat(4, 150px);
+    grid-template-columns: repeat(4, 200px);
     grid-template-rows: repeat(2, 200px);
-    row-gap: 2px;
-    column-gap: 5px;
+    row-gap: 10px;
+    column-gap: 20px;
+    padding: 10px;
 }
 
 .demo__img{
-    width: 150px;
-    height: 150px;
-    border-radius: 5px;
-    box-shadow: 2px 1px #79064d;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 4px 2px #ffffffc8;
 }
 
 .bloque__solicitud {
@@ -494,7 +493,8 @@ html {
     margin: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
 }
 
 .enviar__button{
@@ -503,6 +503,7 @@ html {
     border-radius: 50px;
     background-color: #ffffff;
     color: #79064d;
+    box-shadow: 4px 1px black
 }
 
 .contacto__whatsapp{
@@ -566,11 +567,18 @@ html {
 @media only screen and (min-width: 480px) and (max-width: 576px){
 
     .gral--margin{
-        margin: 80px;
+        margin: 20px 50px;
+    }
+
+    .demo__container{
+        padding: 20px;
     }
 
     .img__section{
-        grid-template-columns: repeat(2, 150px);
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: auto;
+        row-gap: 10px;
+        column-gap: 10px;
     }
 
     .bloque__solicitud{
@@ -581,7 +589,7 @@ html {
     }
 
     .solicitud__button{
-        border: 5px solid #c669a2;
+        border: 5px dotted #ffffff;
         box-shadow: none;
     }
 
@@ -638,14 +646,6 @@ html {
         position: relative;
     }
 
-    .bloque__faqs{
-        margin: 50px 100px;
-    }
-
-    .bloque__contacto{
-        margin: 5px 80px;
-    }
-
     .section__contacto{
         margin: 10px;
     }
@@ -695,7 +695,59 @@ html {
 @media only screen and (min-width: 577px) and (max-width: 768px) {
 
     .gral--margin{
-        margin: 50px;
+        margin: 20px 50px;
+    }
+
+    .demo__container{
+        padding: 20px;
+    }
+
+    .bloque__solicitud{
+        width: 100px;
+        height: auto;
+        right: 30px;
+        bottom: 40px;
+    }
+
+    .solicitud__button{
+        border: 5px dotted #ffffff;
+        box-shadow: none;
+    }
+
+    .solicitud__link{
+        font-size: 1em;
+    }
+
+    .img__section{
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: auto;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .header__lista__menu{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+        grid-template-rows: repeat(2,20px);
+        padding: 10px;
+        background-color: #ffffff;
+    }
+
+    .header__item__menu{
+        border: 1px solid #79064d;
+        border-radius: 20px;
+    }
+
+    .header__link__menu{
+        color: #79064d;
+    }
+
+    .bloque__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
     }
 
     .footer__list__redes{
@@ -705,12 +757,243 @@ html {
         text-decoration: underline #c669a2;
     }
 
+    .footer__redes__link{
+        color: #79064d;
+    }
 
+    .historia--order{
+        order: -1;
+    }
+
+    .historia--grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .bloque__historia{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .section__contacto{
+        margin: 10px;
+    }
+
+    .forms__datos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .forms__buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .buttons__adjuntar{
+        text-align: center;
+    }
+
+    .adjunto__button{
+        width: 200px;
+    }
+
+    .contacto__whatsapp{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .contacto__titulo{
+        text-align: center;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
+    .gral--margin{
+        margin: 20px 50px;
+    }
+
+    .header__lista__menu{
+        padding: 10px;
+        background-color: #ffffff;
+    }
+
+    .header__item__menu{
+        border: 1px solid #79064d;
+        border-radius: 20px;
+        font-size: 1.5em;
+    }
+
+    .header__link__menu{
+        color: #79064d;
+    }
+
+    .bloque__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .historia--grid{
+        grid-template-rows: auto;
+    }
+
+    .bloque__historia{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .contacto__whatsapp{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .contacto__titulo{
+        text-align: center;
+    }
+
+    .forms__datos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .forms__buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .section__contacto{
+        margin: 20px;
+    }
+
+    .img__section{
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: auto;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .bloque__solicitud{
+        width: 100px;
+        height: auto;
+        right: 50px;
+        bottom: 40px;
+    }
+
+    .solicitud__button{
+        border: 5px dotted #ffffff;
+        background-color: #79064d;
+        box-shadow: none;
+    }
+
+    .solicitud__link{
+        font-size: 1.5em;
+    }
+
+    .footer__list__redes{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-decoration: underline #c669a2;
+    }
+
+    .footer__redes__link{
+        color: #79064d;
+    }
 }
+
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .gral--margin{
+        margin: 150px 50px 50px;
+    }
+
+    .header__item__menu {
+        font-size: 1.5em;
+        border: 1px solid #ffffff;
+        border-radius: 20px;
+    }
+
+    .header__lista__menu{
+        padding: 5px;
+    }
+
+    .historia--grid{
+        grid-template-rows: auto;
+    }
+
+    .bloque__historia{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .bloque__solicitud{
+        width: 100px;
+        height: auto;
+        right: 80px;
+        bottom: 50px;
+    }
+
+    .solicitud__button{
+        border: 5px dotted #ffffff;
+        background-color: #79064d;
+        box-shadow: none;
+    }
+
+    .solicitud__link{
+        font-size: 2em;
+    }
 }
+
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
+
+    .gral--margin{
+        margin: 150px 50px 50px;
+    }
+
+    .header__item__menu {
+        border: 1px solid #ffffff;
+        border-radius: 20px;
+    }
+
+    .header__lista__menu{
+        padding: 5px;
+    }
+
+    .historia--grid{
+        grid-template-rows: auto;
+    }
+
+    .bloque__historia{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
 }
