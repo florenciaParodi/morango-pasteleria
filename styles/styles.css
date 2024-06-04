@@ -67,12 +67,8 @@ html {
     list-style-type: none;
 }
 
-.bloqe__main{
-    width: 100vw;
-}
-
 .bloque__welcome {
-    width: 100vw;
+    max-width: 100vw;
     position: relative;
 }
 
@@ -112,25 +108,29 @@ html {
     color: #ffffff;
 }
 
-
 .welcome__video{
-    width: 100vw;
+    max-width: 100%;
 }
 
 .bloque__demo{
-    margin: 20px 150px;
+    margin-top: 50px;
+    max-width: 100vw;
 }
 
 .demo__container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #79064d;
+    margin: 20px;
+    max-width: 100%;
 }
 
 .container__titulo{
     font-size: 2em;
-    font-weight: 500;
-    color: #bb2581;
+    font-weight: bold;
+    color: #ffffff;
     align-self: center;
     margin: 20px;
     width: 200px;
@@ -138,17 +138,16 @@ html {
 }
 
 .img__section {
-    margin: 50px;
     display: grid;
     grid-template-columns: repeat(4, 150px);
     grid-template-rows: repeat(2, 200px);
-    row-gap: 5px;
+    row-gap: 2px;
     column-gap: 5px;
 }
 
 .demo__img{
     width: 150px;
-    height: 200px;
+    height: 150px;
     border-radius: 5px;
     box-shadow: 2px 1px #79064d;
 }
@@ -195,7 +194,7 @@ html {
 }
 
 .historia--order{
-    order: 2;
+    order: 1;
 }
 
 .historia__titulo {
@@ -470,10 +469,10 @@ html {
 }
 
 .forms__datos{
-    margin: 20px;
+    margin: 10px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -509,9 +508,9 @@ html {
 .contacto__whatsapp{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
-    gap: 30px;
+    gap: 50%;
 }
 
 .whatsapp__link{
@@ -523,7 +522,6 @@ html {
     background-color: rgb(45, 255, 45);
     border-radius: 50px;
 }
-
 
 .bloque__footer {
     margin: 25px;
@@ -565,14 +563,43 @@ html {
 }
 
 
-@media only screen and (max-width: 576px){
-    .bloque__historia{
-        margin: 50px 150px;
+@media only screen and (min-width: 480px) and (max-width: 576px){
+
+    .gral--margin{
+        margin: 80px;
+    }
+
+    .img__section{
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .bloque__solicitud{
+        width: 80px;
+        height: auto;
+        right: 30px;
+        bottom: 40px;
+    }
+
+    .solicitud__button{
+        border: 5px solid #c669a2;
+        box-shadow: none;
+    }
+
+    .solicitud__link{
+        font-size: 1em;
+    }
+
+    .historia--order{
+        order: -1;
     }
 
     .historia__container{
         display: flex;
         flex-direction: column;
+    }
+
+    .historia--grid{
+        row-gap: 10px;
     }
 
     .footer__list__redes{
@@ -612,17 +639,76 @@ html {
     }
 
     .bloque__faqs{
-        margin: 50px 150px;
+        margin: 50px 100px;
     }
+
+    .bloque__contacto{
+        margin: 5px 80px;
+    }
+
+    .section__contacto{
+        margin: 10px;
+    }
+
+    .contacto__titulo{
+        text-align: center;
+    }
+
+    .forms__datos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .datos__personales{
+        width: 250px;
+    }
+
+    .forms__buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .buttons__adjuntar{
+        text-align: center;
+    }
+
+    .adjunto__button{
+        width: 200px;
+    }
+
+    .contacto__whatsapp{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    .gral--margin{
+        margin: 50px;
+    }
+
+    .footer__list__redes{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-decoration: underline #c669a2;
+    }
+
+
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-    .historia__container{
-        grid-template-rows: 400px;
-    }
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
 }
