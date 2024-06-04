@@ -563,8 +563,147 @@ html {
     text-decoration: underline;
 }
 
+@media only screen and (min-width: 350px) and (max-width: 480px){
 
-@media only screen and (min-width: 480px) and (max-width: 576px){
+    .gral--margin{
+        margin: 20px;
+    }
+
+    .header__lista__menu{
+        display: grid;
+        grid-template-columns: repeat(3,33%);
+        grid-template-rows: repeat(2,20px);
+        padding: 10px;
+        background-color: #ffffff;
+    }
+
+    .header__item__menu{
+        border: 1px solid #79064d;
+        border-radius: 20px;
+    }
+
+    .header__link__menu{
+        color: #79064d;
+    }
+
+    .bloque__header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .welcome__titulo{
+        font-size: 5em;
+    }
+
+    .welcome__parrafo{
+        font-size: 1em;
+    }
+
+    .footer__list__redes{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        text-decoration: underline #c669a2;
+    }
+
+    .footer__redes__link{
+        color: #79064d;
+    }
+
+    .img__section{
+        grid-template-columns: repeat(2, 100px);
+        grid-template-rows: auto;
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+
+    .demo__img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .historia--grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .bloque__historia{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .forms__datos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .forms__buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .buttons__adjuntar{
+        text-align: center;
+    }
+
+    .adjunto__button{
+        width: 200px;
+    }
+
+    .contacto__whatsapp{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .contacto__titulo{
+        text-align: center;
+    }
+
+    .section__contacto{
+        margin: 10px 0;
+    }
+
+    .forms__subtitulo{
+        text-align: center;
+    }
+
+    .datos__personales{
+        width: 200px;
+    }
+
+    .solicitud__button{
+        border: 5px dotted #ffffff;
+        box-shadow: none;
+        width: 100px;
+    }
+
+    .solicitud__link{
+        font-size: 1em;
+    }
+
+    .bloque__solicitud{
+        right: 20px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 576px){
 
     .gral--margin{
         margin: 20px 50px;
