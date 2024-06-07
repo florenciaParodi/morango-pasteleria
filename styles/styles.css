@@ -574,6 +574,7 @@ html {
         grid-template-columns: repeat(3,33%);
         grid-template-rows: repeat(2,20px);
         padding: 10px;
+        background-color: transparent;
     }
 
     .header__item__menu{
@@ -764,6 +765,7 @@ html {
         grid-template-columns: repeat(3,33%);
         grid-template-rows: repeat(2,20px);
         padding: 10px;
+        background-color: transparent; 
     }
 
     .header__item__menu{
@@ -867,6 +869,7 @@ html {
         grid-template-columns: repeat(3,33%);
         grid-template-rows: repeat(2,20px);
         padding: 10px;
+        background-color: transparent;
     }
 
     .header__item__menu{
