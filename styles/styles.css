@@ -37,6 +37,10 @@ html {
     border-radius: 20px;
 }
 
+.bloque__padding{
+    padding: 20px;
+}
+
 .bloque__bottom--margin{
     margin-bottom: 75px;
 }
@@ -243,18 +247,12 @@ html {
     box-shadow: 4px 4px #79064d;
 }
 
-.market__welcome{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
 
 .market__parrafo{
-    font-size: 1em;
+    font-size: 0.8em;
     font-style: italic;
-    font-weight: 500;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .market__filtros{
@@ -263,7 +261,7 @@ html {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #79064d;
+    background-color: #c669a2;
     border-radius: 20px;
 }
 
@@ -277,7 +275,6 @@ html {
     border-radius: 20px;
     width: 300px;
 }
-
 
 .select__option{
     padding: 5px;
@@ -294,83 +291,80 @@ html {
     color: black;
 }
 
+.producto__cart__link{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
 .market__productos__cards {
-    /*  margin: 50px 10px 50px 10px ; */ 
     padding: 10px;
     overflow: scroll;
     height: 1200px;
-    width: auto;
 }
 
-.grid__productos{
+.productos__section{
     display: grid;
-    grid-template-columns: repeat(4, 25%);
-    grid-template-rows: 100%;
-    row-gap: 20px;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
 
-.producto__container {
+.producto__card{
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 7px;
     border: 1px solid #79064d;
     border-radius: 20px;
-    width: 200px;
-    height: auto;
+    box-shadow: 2px 1px 5px #0000008a;
 }
 
-.grid__indiv__producto{
-    display: grid;
-    grid-template-columns: 200px;
-    grid-template-rows: 200px;
+.producto__img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    object-fit: cover;
 }
 
-.producto__img {
-    border-radius: 20px;
+.producto__info{
     width: 100%;
     height: auto;
-    object-fit: cover;
-    padding: 5px;
-}
-
-.producto__info {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-    margin: 20px;
-    padding: 5px;
+    gap: 2px;
 }
+
 .producto__name{
     font-size: 1em;
-    align-self: center;
-    text-decoration: underline;
-    color: black;
     font-weight: bold;
+    color: #79064d;
+}
+
+.producto__detalle{
+    font-size: 1em;
+    color: black;
 }
 
 .producto__priceAndButton{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
-    padding: 2px;
-    margin: 5px;
-    margin-top: 0;
-
+    gap: 50px;
 }
 
-.producto__button__link {
+.producto__button__link{
     text-decoration: none;
-    font-size: 30px;
+    color: #ffffff;
     background-color: #bb2581;
-    color: white;
+    padding: 5px 10px;
     border-radius: 50px;
-    padding: 2px;
-}
-
-.testimonios__section{
-    padding: 20px;
 }
 
 .testimonios__reviews{
@@ -415,10 +409,6 @@ html {
 .testimonio__parrafo{
     font-size: 1em;
     color: black;
-}
-
-.bloque__preguntas{
-    padding: 20px;
 }
 
 .faqs__preguntas{
@@ -718,6 +708,16 @@ html {
     .testimonio__card{
         width: auto;
     }
+
+    .market__filtros{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .productos__section{
+        grid-template-columns: repeat(1, auto);
+    }
+
 }
 
 @media only screen and (min-width: 481px) and (max-width: 576px){
@@ -852,6 +852,16 @@ html {
 
     .testimonio__card{
         width: auto;
+    }
+
+    .market__filtros{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .productos__section{
+        grid-template-columns: repeat(2, auto);
     }
 }
 
@@ -1002,6 +1012,22 @@ html {
     .testimonio__card{
         width: auto;
     }
+
+    .market__filtros{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .productos__section{
+        grid-template-columns: repeat(3, auto);
+        row-gap: 20px;
+    }
+
+    .producto__card{
+        margin: 0;
+        padding: 5px;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 992px) {
@@ -1117,6 +1143,23 @@ html {
     .testimonio__card{
         width: auto;
     }
+
+    .market__filtros{
+        justify-content: center;
+        align-items: end;
+        gap: 2px;
+    }
+
+    .productos__section{
+        grid-template-columns: repeat(4, auto);
+        column-gap: 5px;
+        row-gap: 10px;
+    }
+
+    .producto__card{
+        margin: 2px;
+        padding: 5px;
+    }
 }
 
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
@@ -1167,6 +1210,10 @@ html {
 
     .testimonio__card{
         width: auto;
+    }
+
+    .producto__card{
+        margin: 5px;
     }
 }
 
