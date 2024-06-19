@@ -711,7 +711,7 @@ html {
 
     .market__filtros{
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
     }
 
     .productos__section{
