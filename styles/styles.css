@@ -25,6 +25,18 @@ html {
     margin: 150px;
 }
 
+.bloque__titulo{
+    margin: 20px;
+    font-size: 2em;
+    text-align: center;
+    color: #bb2581;
+}
+
+.bloque__border{
+    border: 1px solid #79064d;
+    border-radius: 20px;
+}
+
 .bloque__bottom--margin{
     margin-bottom: 75px;
 }
@@ -239,12 +251,6 @@ html {
     gap: 10px;
 }
 
-.market__titulo {
-    font-size: 5em;
-    font-weight: 600;
-    color: #bb2581;
-}
-
 .market__parrafo{
     font-size: 1em;
     font-style: italic;
@@ -289,10 +295,8 @@ html {
 }
 
 .market__productos__cards {
-    border: 1px solid #79064d;
-    border-radius: 20px;
-/*     margin: 50px 10px 50px 10px ;
- */    padding: 10px;
+    /*  margin: 50px 10px 50px 10px ; */ 
+    padding: 10px;
     overflow: scroll;
     height: 1200px;
     width: auto;
@@ -365,55 +369,56 @@ html {
     padding: 2px;
 }
 
-
 .testimonios__section{
     padding: 20px;
-    border: 1px solid #79064d;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(1, 100%);
-    column-gap: 10px;
 }
 
-.testimonio__card{
-    padding: 10px;
-    border: 1px solid #79064d;
-    border-radius: 20px;
-    background-color: #c669a2;
-    color: #ffffff;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.testimonios__reviews{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
-.testimonio__img{
-    width: 100px;
+.testimonio__card{
+    width: auto;
     height: auto;
-    border-radius: 20px;
-}
-
-
-.bloque__faqs{
+    margin: 5px;
+    padding: 10px;
     border: 1px solid #79064d;
     border-radius: 20px;
+    box-shadow: 5px 5px 5px #c669a2;
 }
 
-.faqs__titulo{
-    margin: 20px;
-    font-size: 2em;
-    text-align: center;
-    color: #bb2581;
+.testimonio__img{
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+    object-fit: cover;
+}
 
+.testimonio__text{
+    width: 100%;
+    height: 50%;
+    padding: 20px;
+    align-items: center;
+}
+
+.testimonio__name{
+    font-size: 1em;
+    color: #79064d;
+    text-align: center;
+}
+
+.testimonio__parrafo{
+    font-size: 1em;
+    color: black;
 }
 
 .bloque__preguntas{
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .faqs__preguntas{
@@ -436,23 +441,12 @@ html {
     color: #79064d;
 }
 
-.bloque__contacto{
-    border: 1px solid #79064d;
-    border-radius: 20px;
-    padding: 20px;
-}
-
 .contacto__welcome{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
-}
-
-.contacto__titulo{
-    font-size: 2em;
-    color: #bb2581;
 }
 
 .section__contacto{
@@ -571,8 +565,8 @@ html {
 
     .header__lista__menu{
         display: grid;
-        grid-template-columns: repeat(3,33%);
-        grid-template-rows: repeat(2,20px);
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(2,auto);
         padding: 10px;
         background-color: rgba(255, 255, 255, 0);
     }
@@ -614,15 +608,26 @@ html {
     }
 
     .img__section{
-        grid-template-columns: repeat(2, 100px);
+        grid-template-columns: repeat(1, 250px);
         grid-template-rows: auto;
         row-gap: 10px;
         column-gap: 10px;
     }
 
+    .container__titulo{
+        color: #c669a2;
+    }
+
+    .demo__container{
+        background-color: #ffffff00;
+        border: 1px solid #79064d;
+        border-radius: 20px;
+    }
+
     .demo__img{
-        width: 100px;
-        height: 100px;
+        width: 100%;
+        height: auto;
+        box-shadow: 4px 2px #c669a2;
     }
 
     .historia--grid{
@@ -637,6 +642,10 @@ html {
         display: flex;
         flex-direction: column;
         gap: 20px;
+    }
+
+    .bloque__contacto{
+        padding: 10px;
     }
 
     .forms__datos{
@@ -701,6 +710,14 @@ html {
     .bloque__solicitud{
         right: 20px;
     }
+
+    .testimonios__reviews{
+        grid-template-columns: repeat(1,auto);
+    }
+
+    .testimonio__card{
+        width: auto;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 576px){
@@ -714,7 +731,7 @@ html {
     }
 
     .img__section{
-        grid-template-columns: repeat(2, 200px);
+        grid-template-columns: repeat(2, auto);
         grid-template-rows: auto;
         row-gap: 10px;
         column-gap: 10px;
@@ -762,8 +779,8 @@ html {
 
     .header__lista__menu{
         display: grid;
-        grid-template-columns: repeat(3,33%);
-        grid-template-rows: repeat(2,20px);
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(2,auto);
         padding: 10px;
         background-color: rgba(255, 255, 255, 0);
     }
@@ -829,6 +846,13 @@ html {
         gap: 5px;
     }
 
+    .testimonios__reviews{
+        grid-template-columns: repeat(1,auto);
+    }
+
+    .testimonio__card{
+        width: auto;
+    }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -858,16 +882,28 @@ html {
     }
 
     .img__section{
-        grid-template-columns: repeat(2, 200px);
+        grid-template-columns: repeat(2, auto);
         grid-template-rows: auto;
         row-gap: 10px;
         column-gap: 10px;
     }
 
+    .demo__img{
+        box-shadow: 4px 2px #c669a2;
+    }
+
+    .demo__container{
+        background-color: #ffffff00;
+    }
+
+    .container__titulo{
+        color: #c669a2;
+    }
+
     .header__lista__menu{
         display: grid;
-        grid-template-columns: repeat(3,33%);
-        grid-template-rows: repeat(2,20px);
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(2,auto);
         padding: 10px;
         background-color: rgba(255, 255, 255, 0);
     }
@@ -957,6 +993,14 @@ html {
 
     .contacto__titulo{
         text-align: center;
+    }
+
+    .testimonios__reviews{
+        grid-template-columns: repeat(2,auto);
+    }
+
+    .testimonio__card{
+        width: auto;
     }
 }
 
@@ -1032,7 +1076,7 @@ html {
     }
 
     .img__section{
-        grid-template-columns: repeat(3, 200px);
+        grid-template-columns: repeat(3, auto);
         grid-template-rows: auto;
         row-gap: 10px;
         column-gap: 10px;
@@ -1064,6 +1108,14 @@ html {
 
     .footer__redes__link{
         color: #79064d;
+    }
+
+    .testimonios__reviews{
+        grid-template-columns: repeat(2,auto);
+    }
+
+    .testimonio__card{
+        width: auto;
     }
 }
 
@@ -1108,6 +1160,14 @@ html {
     .solicitud__link{
         font-size: 2em;
     }
+
+    .testimonios__reviews{
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .testimonio__card{
+        width: auto;
+    }
 }
 
 @media only screen and (min-width: 1201px) and (max-width: 1400px) {
@@ -1133,6 +1193,10 @@ html {
         display: flex;
         flex-direction: column;
         gap: 50px;
+    }
+
+    .testimonio__card{
+        width: auto;
     }
 
 }
