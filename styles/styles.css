@@ -182,10 +182,10 @@ html {
 
 .solicitud__button {
     border-radius: 20px;
-    padding: 5px;
-    background-color: #bb2581;
+    padding: 15px;
+    background-color: #c669a2;
     border: 2px solid #ffffff;
-    box-shadow: 5px 3px #ffffff;
+    box-shadow: 5px 3px #ff46b8;
 }
 
 .historia--grid{
@@ -688,6 +688,7 @@ html {
     }
 
     .solicitud__button{
+        padding: 5px;
         border: 5px dotted #ffffff;
         box-shadow: none;
         width: 100px;
@@ -698,8 +699,9 @@ html {
     }
 
     .bloque__solicitud{
-        right: 20px;
-    }
+        position: sticky;
+/*         left: 300px;
+ */    }
 
     .testimonios__reviews{
         grid-template-columns: repeat(1,auto);
@@ -740,17 +742,25 @@ html {
     .bloque__solicitud{
         width: 80px;
         height: auto;
-        right: 30px;
-        bottom: 40px;
+        position: sticky;
+        left: 370px;
     }
 
     .solicitud__button{
         border: 5px dotted #ffffff;
         box-shadow: none;
+        padding: 10px;
+        background-color: #79064d;
     }
 
     .solicitud__link{
         font-size: 1em;
+    }
+
+    .bloque__historia{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
     }
 
     .historia--order{
