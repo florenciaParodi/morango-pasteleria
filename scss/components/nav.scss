@@ -1,0 +1,25 @@
+.header__nav__menu {
+
+    .header__lista__menu {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        background-color: #bb2581;
+        border-radius: 20px;
+
+        .header__item__menu {
+            font-size: 1em;
+            list-style-type: none;
+
+            .header__link__menu {
+                padding: 10px;
+                text-decoration: none;
+                color: #ffffff;
+                font-weight: 400;
+                font-style: italic;
+                text-align: center;
+            }
+
+        }
+    }
+}

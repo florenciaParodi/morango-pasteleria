@@ -1,0 +1,23 @@
+.bloque__solicitud {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+
+    .solicitud__button {
+        border-radius: 20px;
+        padding: 15px;
+        background-color: #c669a2;
+        border: 2px solid #ffffff;
+        box-shadow: 5px 3px #ff46b8;
+
+        .solicitud__link {
+            text-decoration: none;
+            color: #ffffff;
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+        
+    }
+}
+
+
