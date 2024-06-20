@@ -138,15 +138,16 @@ html {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #c669a2;
+    border: 1px solid #79064d;
     border-radius: 20px;
     margin: 20px;
+    padding: 20px;
 }
 
 .container__titulo{
     font-size: 2em;
     font-weight: bold;
-    color: #ffffff;
+    color: #c669a2;
     margin: 20px;
     margin: 50px 10px 20px;
 }
@@ -164,7 +165,7 @@ html {
     width: 200px;
     height: 200px;
     border-radius: 20px;
-    box-shadow: 4px 2px #ffffffc8;
+    filter: drop-shadow(2px 2px  #c669a2);
 }
 
 .bloque__solicitud {
