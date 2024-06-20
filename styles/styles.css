@@ -377,38 +377,51 @@ html {
 }
 
 .testimonio__card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
     width: auto;
     height: auto;
     margin: 5px;
     padding: 10px;
     border: 1px solid #79064d;
-    border-radius: 20px;
+    border-radius: 20px 2px 20px 20px;
     box-shadow: 5px 5px 5px #c669a2;
 }
 
-.testimonio__img{
-    width: 100%;
+.testimonio__card__info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     height: 50%;
-    border-radius: 5px;
+}
+
+.testimonio__img{
+    width: 100px;
+    height: auto;
+    border-radius: 20px;
     object-fit: cover;
+    filter: drop-shadow(1px 1px 2px black);
 }
 
 .testimonio__text{
     width: 100%;
     height: 50%;
     padding: 20px;
-    align-items: center;
 }
 
 .testimonio__name{
     font-size: 1em;
     color: #79064d;
-    text-align: center;
+    justify-self: center;
 }
 
 .testimonio__parrafo{
     font-size: 1em;
     color: black;
+    font-style: italic;
 }
 
 .faqs__preguntas{
@@ -709,6 +722,8 @@ html {
 
     .testimonio__card{
         width: auto;
+        flex-direction: row;
+        align-items: center;
     }
 
     .market__filtros{
@@ -862,6 +877,8 @@ html {
 
     .testimonio__card{
         width: auto;
+        flex-direction: row;
+        align-items: center;
     }
 
     .market__filtros{
