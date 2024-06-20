@@ -6,7 +6,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        background-color: #c669a2;
+        background-color: $alternative-color;
         border-radius: 20px;
 
         .market__parrafo {
@@ -20,7 +20,7 @@
 
             .search {
                 padding: 5px;
-                border: 2px dotted #79064d;
+                border: 2px dotted $main-color;
                 border-radius: 20px;
                 width: 300px;
             }
@@ -34,12 +34,12 @@
 
             .select__option {
                 padding: 5px;
-                border: 2px solid #79064d;
+                border: 2px solid $main-color;
                 border-radius: 20px;
                 width: 200px;
 
                 .option--titulo {
-                    color: #bb2581;
+                    color: $secondary-color;
 
                     .option__name {
                         color: black;

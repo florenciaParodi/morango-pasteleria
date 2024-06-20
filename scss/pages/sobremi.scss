@@ -4,11 +4,11 @@
         padding: 20px;
         border: 1px solid rgb(68, 47, 47);
         border-radius: 20px;
-        background-color: #79064d;
-        box-shadow: 5px 5px #c669a2;
+        background-color: $main-color;
+        box-shadow: 5px 5px $alternative-color;
 
         &:hover{
-            background-color: #c669a2;
+            background-color: $alternative-color;
             border: 1px solid #ffffff;
         }
 
@@ -42,10 +42,10 @@
             .historia__img {
                 height: auto;
                 border-radius: 50px;
-                box-shadow: 4px 4px #c669a2;
+                box-shadow: 4px 4px $alternative-color;
 
                 &:hover{
-                    box-shadow: 4px 4px #79064d;
+                    box-shadow: 4px 4px $main-color;
                 }
             }
         }

@@ -18,7 +18,7 @@
             font-size: 6em;
             font-weight: 900;
             text-align: center;
-            color: #bb2581;
+            color: $secondary-color;
             text-shadow: 2px 3px #ffffff;
         }
 
@@ -55,7 +55,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            border: 1px solid #79064d;
+            border: 1px solid $main-color;
             border-radius: 20px;
             margin: 20px;
             padding: 20px;
@@ -63,7 +63,7 @@
             .container__titulo{
                 font-size: 2em;
                 font-weight: bold;
-                color: #c669a2;
+                color: $alternative-color;
                 margin: 20px;
                 margin: 50px 10px 20px;
             }
@@ -80,7 +80,7 @@
                     width: 200px;
                     height: 200px;
                     border-radius: 20px;
-                    filter: drop-shadow(2px 2px  #c669a2);
+                    filter: drop-shadow(2px 2px  $alternative-color);
                 }
             }
         }

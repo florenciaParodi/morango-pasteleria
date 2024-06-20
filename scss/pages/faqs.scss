@@ -11,13 +11,13 @@
 
             .preguntas__titulo{
                 font-size: 1em;
-                color: #79064d;
+                color: $main-color;
             }
 
             .preguntas__card{
                 margin: 5px;
                 padding: 10px;
-                border: 1px solid #79064d;
+                border: 1px solid $main-color;
                 border-radius: 20px;
             }
         }

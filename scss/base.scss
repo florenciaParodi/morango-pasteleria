@@ -12,23 +12,23 @@ html {
 }
 
 .gral--margin {
-    margin: 150px;
+    margin: $main-margin;
 }
 
 .bloque__titulo{
     margin: 20px;
     font-size: 2em;
     text-align: center;
-    color: #bb2581;
+    color: $secondary-color;
 }
 
 .bloque__border{
-    border: 1px solid #79064d;
+    border: 1px solid $main-color;
     border-radius: 20px;
 }
 
 .bloque__padding{
-    padding: 20px;
+    padding: $bloques-padding;
 }
 
 .bloque__bottom--margin{

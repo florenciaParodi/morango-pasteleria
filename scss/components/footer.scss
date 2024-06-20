@@ -5,7 +5,7 @@
 
         .footer__titulo {
             text-align: center;
-            color: #bb2581;
+            color: $secondary-color;
         }
 
         .footer__list__redes {
@@ -19,7 +19,7 @@
                 list-style-type: none;
 
                 .footer__redes__link {
-                    color: #bb2581;
+                    color: $secondary-color;
                     text-decoration: none;
                 }
             }
