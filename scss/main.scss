@@ -6,12 +6,14 @@
 @import "./utils/_resolutions.scss";
 
 @import "./components/header";
+
+@import "./pages/inicio";
 @import "./components/buttons";
+
 @import "./components/cards";
 @import "./components/inputs";
 @import "./components/footer";
 
-@import "./pages/inicio";
 @import "./pages/sobremi";
 @import "./pages/productos";
 @import "./pages/testimonios";

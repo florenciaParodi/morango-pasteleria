@@ -666,6 +666,81 @@ html {
   background-image: #79064d;
 }
 
+.bloque__welcome {
+  max-width: 100vw;
+  position: relative;
+}
+.bloque__welcome .welcome__text {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.156);
+}
+.bloque__welcome .welcome__text .welcome__titulo {
+  font-size: 6em;
+  font-weight: 900;
+  text-align: center;
+  color: #bb2581;
+  text-shadow: 2px 3px #ffffff;
+}
+.bloque__welcome .welcome__text .welcome__subtitulo {
+  font-size: 1em;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  font-style: italic;
+}
+.bloque__welcome .welcome__text .welcome__parrafo {
+  padding: 10px;
+  font-size: 1.5em;
+  text-align: center;
+  color: #ffffff;
+}
+.bloque__welcome .bloque__video .welcome__video {
+  max-width: 100%;
+}
+.bloque__welcome .bloque__demo {
+  margin-top: 30px;
+}
+.bloque__welcome .bloque__demo .demo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #79064d;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+.bloque__welcome .bloque__demo .demo__container .container__titulo {
+  font-size: 2em;
+  font-weight: bold;
+  color: #c669a2;
+  margin: 20px;
+  margin: 50px 10px 20px;
+}
+.bloque__welcome .bloque__demo .demo__container .img__section {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, 200px);
+  row-gap: 10px;
+  column-gap: 20px;
+  padding: 10px;
+}
+.bloque__welcome .bloque__demo .demo__container .img__section .demo__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  filter: drop-shadow(2px 2px #c669a2);
+}
+
 .bloque__solicitud {
   position: fixed;
   right: 50px;
@@ -853,81 +928,6 @@ html {
   font-size: 1em;
   color: rgb(25, 255, 25);
   text-decoration: underline;
-}
-
-.bloque__welcome {
-  max-width: 100vw;
-  position: relative;
-}
-.bloque__welcome .welcome__text {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.156);
-}
-.bloque__welcome .welcome__text .welcome__titulo {
-  font-size: 6em;
-  font-weight: 900;
-  text-align: center;
-  color: #bb2581;
-  text-shadow: 2px 3px #ffffff;
-}
-.bloque__welcome .welcome__text .welcome__subtitulo {
-  font-size: 1em;
-  font-weight: 500;
-  text-align: center;
-  color: #ffffff;
-  font-style: italic;
-}
-.bloque__welcome .welcome__text .welcome__parrafo {
-  padding: 10px;
-  font-size: 1.5em;
-  text-align: center;
-  color: #ffffff;
-}
-.bloque__welcome .bloque__video .welcome__video {
-  max-width: 100%;
-}
-.bloque__welcome .bloque__demo {
-  margin-top: 30px;
-}
-.bloque__welcome .bloque__demo .demo__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 1px solid #79064d;
-  border-radius: 20px;
-  margin: 20px;
-  padding: 20px;
-}
-.bloque__welcome .bloque__demo .demo__container .container__titulo {
-  font-size: 2em;
-  font-weight: bold;
-  color: #c669a2;
-  margin: 20px;
-  margin: 50px 10px 20px;
-}
-.bloque__welcome .bloque__demo .demo__container .img__section {
-  display: grid;
-  grid-template-columns: repeat(4, 200px);
-  grid-template-rows: repeat(2, 200px);
-  row-gap: 10px;
-  column-gap: 20px;
-  padding: 10px;
-}
-.bloque__welcome .bloque__demo .demo__container .img__section .demo__img {
-  width: 200px;
-  height: 200px;
-  border-radius: 20px;
-  filter: drop-shadow(2px 2px #c669a2);
 }
 
 .bloque__historia .historia__container {
