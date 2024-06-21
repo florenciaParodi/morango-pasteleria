@@ -16,18 +16,13 @@
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
-            /* background-color: $secondary-color;*/
             border-radius: 20px;
-    
+
             .header__item__menu {
                 font-size: 1em;
                 list-style-type: none;
                 background-image: linear-gradient(to right, $main-color, $secondary-color, $alternative-color);
 
-                &:hover{
-                    background-image: $main-color;
-                }
-    
                 .header__link__menu {
                     padding: 10px;
                     text-decoration: none;
@@ -36,6 +31,10 @@
                     font-style: italic;
                     text-align: center;
                 }
+        }
+
+        &:hover{
+            background-image: $main-color;
         }
     }
 }
