@@ -1,9 +1,9 @@
 /* acá van los imports de cada archivo, es decir todo junto y en órden */
+
+
 @import "./utils/variables";
 
 @import "./base";
-
-@import "./utils/_resolutions.scss";
 
 @import "./components/header";
 
@@ -20,3 +20,4 @@
 @import "./pages/faqs";
 @import "./pages/form";
 
+@import "./utils/_resolutions.scss";
