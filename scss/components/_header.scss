@@ -12,9 +12,7 @@
         height: auto;
     }
 
-    .header__nav__menu {
-
-        .header__lista__menu {
+    .header__lista__menu {
             display: flex;
             flex-wrap: wrap;
             gap: 10px;
@@ -25,6 +23,10 @@
                 font-size: 1em;
                 list-style-type: none;
                 background-image: linear-gradient(to right, $main-color, $secondary-color, $alternative-color);
+
+                &:hover{
+                    background-image: $main-color;
+                }
     
                 .header__link__menu {
                     padding: 10px;
@@ -34,10 +36,6 @@
                     font-style: italic;
                     text-align: center;
                 }
-    
-                
-            }
-    
         }
     }
 }
