@@ -97,11 +97,7 @@
             border: 2px solid #ffffff;
             box-shadow: 5px 3px #ff46b8;
 
-            animation-name: button-animation;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-            animation-duration: 1.5;
-            animation-delay: 2s;
+
 
             .solicitud__link {
                 text-decoration: none;
@@ -110,35 +106,11 @@
                 font-weight: 500;
             }
         }
-    }
-}
 
-@keyframes button-animation {
-    0% {
-        rotate: 10deg;
-    }
-
-    10% {
-        rotate: -10deg;
-        background-color: linear-gradient($secondary-color, $mix-color, $main-color);
-    }
-
-    25% {
-        rotate: 10deg;
-        background-color: linear-gradient($secondary-color, $mix-color, $main-color);
-    }
-
-    50% {
-        rotate: -10deg;
-        background-color: linear-gradient($mix-color, $main-color, $secondary-color);
-    }
-
-    75% {
-        rotate: 10deg;
-        background-color: linear-gradient($mix-color, $main-color, $secondary-color);
-    }
-
-    100% {
-        rotate: -10deg;
+        animation-name: button-animation;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-duration: 1.5;
+        animation-delay: 2s;
     }
 }

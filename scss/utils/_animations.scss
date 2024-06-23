@@ -1,0 +1,29 @@
+@keyframes button-animation {
+    0% {
+        rotate: 10deg;
+    }
+
+    10% {
+        rotate: -10deg;
+        background-color: linear-gradient($secondary-color, $mix-color, $main-color);
+    }
+
+    25% {
+        rotate: 10deg;
+        background-color: linear-gradient($secondary-color, $mix-color, $main-color);
+    }
+
+    50% {
+        rotate: -10deg;
+        background-color: linear-gradient($mix-color, $main-color, $secondary-color);
+    }
+
+    75% {
+        rotate: 10deg;
+        background-color: linear-gradient($mix-color, $main-color, $secondary-color);
+    }
+
+    100% {
+        rotate: -10deg;
+    }
+}
