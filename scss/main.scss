@@ -1,7 +1,16 @@
 /* acá van los imports de cada archivo, es decir todo junto y en órden */
 
+@import "./utils/variables.scss";
 @import "./base";
 
 @import "./components/header";
+@import "./components/cards";
 
-@import "./pages/inicio"
+@import "./pages/inicio";
+@import "./pages/sobremi";
+@import "./pages/productos";
+@import "./pages/testimonios";
+@import "./pages/faqs";
+@import "./pages/form";
+
+@import "./components/footer";

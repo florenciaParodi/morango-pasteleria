@@ -35,7 +35,14 @@ html {
     margin-bottom: 75px;
 }
 
-$main-color: #79064d;
-$secondary-color: #bb2581;
-$mix-color: #c669a2;
+.historia--grid{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 300px;
+    row-gap: 100px;
+}
+
+.historia--order{
+    order: 1;
+}
 

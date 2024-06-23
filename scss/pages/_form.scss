@@ -1,3 +1,84 @@
+.contacto__welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    .contacto__parrafo{
+        font-style: italic;
+    }
+}
+
+.section__contacto{
+    margin: 50px;
+    padding: 20px;
+    border: 2px solid #c669a2;
+    border-radius: 20px;
+    background-color: #79064d;
+}
+
+.forms--color{
+    color: #ffffff;
+}
+
+.forms__datos{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.datos__personales{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    width: 300px;
+}
+
+.dato--area{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.forms__buttons{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+
+.enviar__button{
+    padding: 7px;
+    border: none;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #79064d;
+    box-shadow: 4px 1px black
+}
+
+.contacto__whatsapp{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 50%;
+
+    .whatsapp__link{
+        font-size: 1em;
+        font-weight: bold;
+        text-decoration: none;
+        padding: 20px;
+        color: #ffffff;
+        background-color: rgb(45, 255, 45);
+        border-radius: 50px;
+    }
+}
+
 
 
 
