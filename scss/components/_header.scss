@@ -7,6 +7,38 @@
     top: 0;
     z-index: 1;
 
+    @include responsiveMin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    @include responsive2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    @include responsive3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    @include responsive4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
     .header__logo img {
         width: 80px;
         height: auto;
@@ -19,9 +51,78 @@
         background-color: #bb2581;
         border-radius: 20px;
 
+        @include responsiveMin {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-template-rows: repeat(2,auto);
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0);
+        }
+
+        @include responsive2{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows: repeat(2,auto);
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0);
+        }
+
+        @include responsive3{
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows: repeat(2,auto);
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0);
+        }
+
+        @include responsive4{
+            padding: 10px;
+            background-color: #ffffff;
+        }
+
+        @include responsive5{
+            padding: 5px;
+        }
+
+        @include responsiveMax{
+            padding: 5px;
+        }
+
         .header__item__menu {
             font-size: 1em;
             list-style-type: none;
+
+            @include responsiveMin {
+                border: 1px solid #79064d;
+                border-radius: 20px;
+            }
+
+            @include responsive2{
+                border: 1px solid #79064d;
+                border-radius: 20px;
+            }
+
+            @include responsive3{
+                border: 1px solid #79064d;
+                border-radius: 20px;
+            }
+
+            @include responsive4{
+                border: 1px solid #79064d;
+                border-radius: 20px;
+                font-size: 1.5em;
+            }
+
+            @include responsive5{
+                font-size: 1.5em;
+                border: 1px solid #ffffff;
+                border-radius: 20px;
+            }
+
+            @include responsiveMax{
+                border: 1px solid #ffffff;
+                border-radius: 20px;
+            }
 
             .header__link__menu {
                 padding: 10px;
@@ -30,6 +131,22 @@
                 font-weight: 400;
                 font-style: italic;
                 text-align: center;
+
+                @include responsiveMin {
+                    color: #79064d;
+                }
+
+                @include responsive2{
+                    color: #79064d;
+                }
+
+                @include responsive3{
+                    color: #79064d;
+                }
+
+                @include responsive4{
+                    color: #79064d;
+                }
             }
         }
     }

@@ -12,6 +12,34 @@
         justify-content: center;
         text-align: center;
         gap: 100px;
+
+        @include responsiveMin {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-decoration: underline #c669a2;
+        }
+
+        @include responsive2{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-decoration: underline #c669a2;
+        }
+
+        @include responsive3{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-decoration: underline #c669a2;
+        }
+
+        @include responsive4{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            text-decoration: underline #c669a2;
+        }
     
         .footer__redes__item {
             list-style-type: none;
@@ -19,6 +47,22 @@
             .footer__redes__link {
                 color: #bb2581;
                 text-decoration: none;
+
+                @include responsiveMin {
+                    color: #79064d;
+                }
+
+                @include responsive2{
+                    color: #79064d;
+                }
+
+                @include responsive3{
+                    color: #79064d;
+                }
+
+                @include responsive4{
+                    color: #79064d;
+                }
             }
         }
     }

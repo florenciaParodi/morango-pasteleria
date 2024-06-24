@@ -8,6 +8,29 @@
         align-items: center;
         background-color: #c669a2;
         border-radius: 20px;
+
+        @include responsiveMin{
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        @include responsive2{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        @include responsive3{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        @include responsive4{
+            justify-content: center;
+            align-items: end;
+            gap: 2px;
+        }
     
         .market__parrafo{
             font-size: 0.8em;
@@ -41,16 +64,17 @@
                 }
             }
         }
-    
         .producto__cart__link{
             text-decoration: none;
             color: #ffffff;
             font-weight: bold;
         }
     }
+}
 
-/*  queda comentado porque están funcionando las cards por separado en components */
-    /* .market__productos__cards {
+/* queda comentado porque están funcionando las cards por separado en components products
+
+    .market__productos__cards {
         padding: 10px;
         overflow: scroll;
         height: 1200px;
@@ -119,9 +143,6 @@
             }
         }
     } */
-}
-
-
 
 
 

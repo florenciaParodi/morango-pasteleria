@@ -1,9 +1,19 @@
+.bloque__contacto{
+    @include responsiveMin{
+        padding: 10px;    
+    }
+}
+
 .contacto__welcome{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
+
+    .contacto__titulo{
+        text-align: center;
+    }
 
     .contacto__parrafo{
         font-style: italic;
@@ -16,6 +26,28 @@
     border: 2px solid #c669a2;
     border-radius: 20px;
     background-color: #79064d;
+
+    @include responsiveMin{
+        margin: 10px 0;
+    }
+
+    @include responsive2{
+        margin: 10px;
+    }
+
+    @include responsive3{
+        margin: 10px;
+    }
+
+    @include responsive4{
+        margin: 20px;
+    }
+
+    .forms__subtitulo {
+        @include responsiveMin {
+            text-align: center;
+        }
+    }
 }
 
 .forms--color{
@@ -28,15 +60,57 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    @include responsiveMin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    @include responsive2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    @include responsive3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    @include responsive4{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .datos__personales{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 5px;
+        width: 300px;
+
+        @include responsiveMin{
+            width: 200px;
+        }
+
+        @include responsive2{
+            width: 250px;
+        }
+    }
 }
 
-.datos__personales{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 5px;
-    width: 300px;
-}
+
 
 .dato--area{
     border-radius: 20px;
@@ -50,6 +124,63 @@
     flex-direction: row;
     justify-content: center;
     gap: 100px;
+
+    @include responsiveMin {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    @include responsive2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    @include responsive3{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    @include responsive4{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .buttons__adjuntar {
+        @include responsiveMin {
+            text-align: center;
+        }
+
+        @include responsive2{
+            text-align: center;
+        }
+
+        @include responsive3{
+            text-align: center;
+        }
+
+        .adjunto__button{
+            width: 200px;
+        }
+
+        @include responsive2{
+            width: 200px;
+        }
+
+        @include responsive3{
+            width: 200px;
+        }
+    }
 }
 
 .enviar__button{
@@ -68,6 +199,42 @@
     align-items: center;
     gap: 50%;
 
+    @include responsiveMin{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    @include responsive2{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    @include responsive3{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+    @include responsive4{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
     .whatsapp__link{
         font-size: 1em;
         font-weight: bold;
@@ -78,10 +245,3 @@
         border-radius: 50px;
     }
 }
-
-
-
-
-
-
-

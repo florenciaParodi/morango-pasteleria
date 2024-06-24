@@ -5,6 +5,42 @@
     align-items: center;
     gap: 20px;
 
+    @include responsiveMin {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @include responsive2{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    @include responsive3{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    @include responsive4{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    @include responsive5{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    @include responsiveMax{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
     .historia__container{
         padding: 20px;
         border: 1px solid rgb(68, 47, 47);
@@ -15,6 +51,11 @@
         &:hover{
         background-color: #c669a2;
         border: 1px solid #ffffff;
+        }
+
+        @include responsive2{
+            display: flex;
+            flex-direction: column;
         }
     
         .historia__text{

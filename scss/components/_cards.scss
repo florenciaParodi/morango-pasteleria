@@ -6,6 +6,27 @@
     justify-content: center;
     gap: 20px;
 
+    @include responsiveMin{
+        grid-template-columns: repeat(1,auto);
+        grid-template-rows: repeat(1, auto);
+    }
+
+    @include responsive2{
+        grid-template-columns: repeat(1,auto);
+    }
+
+    @include responsive3{
+        grid-template-columns: repeat(2,auto);
+    }
+
+    @include responsive4{
+        grid-template-columns: repeat(2,auto);
+    }
+
+    @include responsive5{
+        grid-template-columns: repeat(3, auto);
+    }
+
     .testimonio__card{
         display: flex;
         flex-direction: column;
@@ -17,7 +38,7 @@
         border: 1px solid #79064d;
         border-radius: 20px 2px 20px 20px;
         box-shadow: 5px 5px 5px #c669a2;
-    
+
         .testimonio__card__info{
             display: flex;
             flex-direction: row;
@@ -25,6 +46,12 @@
             align-items: center;
             gap: 20px;
             height: 50%;
+
+            @include responsiveMin{
+                width: auto;
+                flex-direction: row;
+                align-items: center;
+            }
         
             .testimonio__img{
                 width: 100px;
@@ -62,6 +89,25 @@
         align-items: center;
         justify-content: center;
         gap: 5px;
+
+        @include responsiveMin{
+            grid-template-columns: repeat(1, auto);
+        }
+
+        @include responsive2{
+            grid-template-columns: repeat(2, auto);
+        }
+
+        @include responsive3{
+            grid-template-columns: repeat(3, auto);
+            row-gap: 20px;
+        }
+
+        @include responsive4{
+            grid-template-columns: repeat(4, auto);
+            column-gap: 5px;
+            row-gap: 10px;
+        }
     
         .producto__card{
             width: auto;
@@ -71,6 +117,20 @@
             border: 1px solid #79064d;
             border-radius: 20px;
             box-shadow: 2px 1px 5px #0000008a;
+
+            @include responsive3{
+                margin: 0;
+                padding: 5px;
+            }
+
+            @include responsive4{
+                margin: 2px;
+                padding: 5px;
+            }
+
+            @include responsive5{
+                margin: 5px;
+            }
         
             .producto__img{
                 width: 100%;
