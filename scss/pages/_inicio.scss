@@ -168,7 +168,6 @@
             width: 80px;
             height: auto;
             position: sticky;
-            left: 370px;
         }
 
         @include responsive3{
@@ -198,6 +197,7 @@
             background-color: #c669a2;
             border: 2px solid #ffffff;
             box-shadow: 5px 3px #ff46b8;
+
             animation-name: button-animation;
             animation-iteration-count: infinite;
             animation-timing-function: linear;

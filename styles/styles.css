@@ -671,7 +671,6 @@ html {
     width: 80px;
     height: auto;
     position: sticky;
-    left: 370px;
   }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
