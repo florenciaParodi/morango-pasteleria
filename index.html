@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morango Pastelería <!--logo--></title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -39,9 +39,11 @@
 
         <section class="bloque__welcome">
             <div class="welcome__text">
-                <h1 class="welcome__titulo">Morango</h1>
-                <h3 class="welcome__subtitulo">Pastelería Artesanal de Diseño</h3>
-                <p class="welcome__parrafo">Creamos la mesa dulce de tus sueños para tu evento especial !</p>
+                <h1 class="welcome__titulo" data-aos="fade-right" data-aos-duration="2000">Morango</h1>
+                <h3 class="welcome__subtitulo" data-aos="fade-up" data-aos-duration="2000">Pastelería Artesanal de
+                    Diseño</h3>
+                <p class="welcome__parrafo" data-aos="fade-up" data-aos-duration="2000">Creamos la mesa dulce de tus
+                    sueños para tu evento especial !</p>
             </div>
             <div class="bloque__video">
                 <video class="welcome__video" src="./multimedia/videos/videoWelcome.mp4" autoplay muted loop></video>
@@ -146,7 +148,7 @@
         </section>
 
         <div class="bloque__solicitud">
-            <button class="solicitud__button">
+            <button class="solicitud__button" data-aos="flip-left" data-aos-duration="3000">
                 <a class="solicitud__link" href="./pages/form.html">Solicitar presupuesto</a>
             </button>
         </div>
@@ -156,10 +158,10 @@
         <div class="footer__elements">
             <h4 class="footer__titulo">Redes sociales</h4>
             <ul class="footer__list__redes"><!--serán todos icons-->
-                <li class="footer__redes__item"><a class="footer__redes__link" href="">Gmail</a></li>
-                <li class="footer__redes__item"><a class="footer__redes__link" href="">Instagram</a></li>
-                <li class="footer__redes__item"><a class="footer__redes__link" href="">Whatsapp</a></li>
-                <li class="footer__redes__item"><a class="footer__redes__link" href="">Facebook</a></li>
+                <li class="footer__redes__item" data-aos="fade-up" data-aos-duration="1000"><a class="footer__redes__link" href="">Gmail</a></li>
+                <li class="footer__redes__item" data-aos="fade-up" data-aos-duration="1500"><a class="footer__redes__link" href="">Instagram</a></li>
+                <li class="footer__redes__item" data-aos="fade-up" data-aos-duration="2000"><a class="footer__redes__link" href="">Whatsapp</a></li>
+                <li class="footer__redes__item" data-aos="fade-up" data-aos-duration="3000"><a class="footer__redes__link" href="">Facebook</a></li>
             </ul>
         </div>
         <div class="footer__copyright">
@@ -169,9 +171,10 @@
         </div>
     </footer>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init();</script>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html
