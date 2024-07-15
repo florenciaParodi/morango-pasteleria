@@ -47,6 +47,7 @@
             .footer__redes__link {
                 color: #bb2581;
                 text-decoration: none;
+                width: 200px;
 
                 @include responsiveMin {
                     color: #79064d;
@@ -80,7 +81,6 @@
         }
     }
 }
-
 
 
 
